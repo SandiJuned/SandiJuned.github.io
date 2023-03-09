@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width" />
     <title>Kath</title>
     
-   <link rel="stylesheet" href="dekor/uji1.css"
+   <link rel="stylesheet" href="uji1.css"/>
 
   </head>
   <body>
   
     <h1>Website pertamaku</h1>
-    <img src="asset/image/website.jpeg" alt="ilustration image website" />
+    <img src="website.jpeg" alt="ilustration image website" />
     
     <p id="hai"> Hai selamat datang!</p>
     <p> ini adalah website pertama yang saya buat dan saya publikasikan. Oiya btw saya munulis kodenya di handphone dengan mengikuti tutorial di website <a href="https://developer.mozilla.org/en-US/">mdn web docs</a>. Website statis ini saya buat dengan menggunakan html,css,dan javascript.</p>
@@ -31,10 +31,10 @@
 
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute("src");
-  if (mySrc === "asset/images/website.jpeg") {
+  if (mySrc === "website.jpeg") {
     myImage.setAttribute("src", "logo.png");
   } else {
-    myImage.setAttribute("src", "asset/images/website.jpeg");
+    myImage.setAttribute("src", "website.jpeg");
   }
 };
 
