@@ -1,0 +1,175 @@
+*{
+    margin :0;
+    padding: 0;
+    box-sizing:border-box;
+    
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:70vh;
+    background:#edf2fa;
+    flex-direction: column;
+    }
+
+h1{
+    text-align:center;
+    font-weight:bold;
+    color :#284c82;
+    font-size:80px;
+    margin-bottom:30px;
+    margin-top:30px;
+  }
+
+h2{
+    display:flex;
+    font-size:50px;
+    margin:20px 20px;
+    color :#284c82;
+    text-align:start;
+    
+    }
+  
+.tentang {
+    font-size:9px;
+    text-align:center;
+    padding-bottom:15px;
+    margin:10px 30px 20px 30px;
+    color :#172233;
+    border-bottom:5px solid #1b2129;
+}
+
+.info{
+    display:flex;
+    font-weight:bold;
+    color:red;
+    font-size:23px;
+    margin-bottom:1000px;
+    }
+/*Kalkulator Aritmatika */
+
+.calculator{
+    background :#cbdaf2;
+    width:900px;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:15px 15px 20px #959dab, -15px -15px 20px #f7faff;
+    margin-bottom:100px;
+}
+
+.calculator .button {
+    position:relative;
+    display:grid;
+}
+
+.calculator .button #hasil{
+   position:relative;
+   grid-column: span 4;
+   user-select:none;
+   overflow: none;
+   width:100%;
+   text-align: end;
+   color: #24272b;
+   background:#edf2fa;
+   height:200px;
+   line-height:100px;
+   box-shadow :inset 5px 5px 10px #959dab, inset -5px -5px 20px #f7faff;
+   border-radius: 10px;
+   margin-bottom:12px;
+   padding:50px 20px;
+   font-size:6em;
+   font-weight:500;
+}
+
+.calculator .button button{
+    background :#edf1f4;
+    position:relative;
+    font-weight:bold;
+    padding:10px;
+    box-shadow:5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px #fff;
+    margin:10px;
+    user-select:none;
+    min-height:40px;
+    height:120px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2em;
+    color:#666;
+    border :2px solid #edf1f4;
+    border-radius:10px;
+}
+
+.calculator .button button:active {
+    box-shadow:inset 5px 5px 10px rgba(0,0,0,0.1), inset -5px -5px 10px #fff;
+    color:#1fccf2;
+}
+
+.calculator .button button#clear{
+    grid-column :span 2;
+    background :#fc5b68 ;
+    color:#fff;
+}
+.calculator .button button#clear:active{
+    box-shadow:inset 5px 5px 10px #963333, inset -5px -5px 10px #f54040;
+    color:#5e1313;
+    }
+
+.calculator .button button#plus{
+    grid-row:span 2;
+    background :#4668b3;
+    color:#fff;
+    height :265px;
+    font-weight :bold;
+    font-size:4em;
+}
+.calculator .button button#plus:active{
+    box-shadow:inset 5px 5px 10px #1d365e, inset -5px -5px 10px #88b5fc;
+    color:#06152e;
+    }
+
+.calculator .button button#equal{
+    background :#4bb346;
+    color:#fff;
+    font-weight :bold;
+    font-size:4em;
+}
+.calculator .button button#equal:active{
+    box-shadow:inset 5px 5px 10px #3b6e17, inset -5px -5px 10px #68f007;
+    color:#0e380c;
+    }
+
+.togelBtn{
+    top :20px;
+    right:20px;
+    border-radius:50%;
+    position:fixed;
+    weight:10px;
+    padding:10px 20px;
+    height:50px;
+    background:#555;
+    border: 3px solid white ;
+    }
+    
+.togelBtn:active{
+    box-shadow:inset 5px 5px 10px #2d2e2e, inset -5px -5px 10px #818285;
+}
+
+
+footer{
+  height:50px;
+  position: relative;
+  background: #140B5C;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.copy{
+    color:#ffffff;
+    font-size:10px;
+    text-align: center;
+    margin-top:20px;
+    }
