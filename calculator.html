@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Megic calculator</title>
+<link rel="stylesheet" type="text/css" href="calstyle.css" />
+</head>
+
+<body>
+<h1>Magic Calculator</h1>
+
+<p class="tentang">
+    Saya suka pemrograman, tapi selain menyukai pemrograman saya juga menyukai matematika. Oleh karena itu untuk mengaplikasikan pengetahuan saya di bidang matematika, saya memiliki ide untuk membuat ini. Ya lewat project iseng ini saya ingin membuat kalkulator yang dapat melakukan segala jenis perhitungan.
+</p>
+<!--kalkulator aritmetika-->
+<h2 class="jenis-calculator">kalkulator aritmetika </h2>
+<div class="calculator">
+<div class="button">
+
+<h3 id="hasil"></h3>
+<button onclick="pushBtn(this);" id="clear">C</button>
+<button onclick="pushBtn(this);">/</button>
+<button onclick="pushBtn(this);">*</button>
+<button onclick="pushBtn(this);">7</button>
+<button onclick="pushBtn(this);">8</button>
+<button onclick="pushBtn(this);">9</button>
+<button onclick="pushBtn(this);">-</button>
+<button onclick="pushBtn(this);">4</button>
+<button onclick="pushBtn(this);">5</button>
+<button onclick="pushBtn(this);">6</button>
+<button onclick="pushBtn(this);" id="plus">+</button>
+<button onclick="pushBtn(this);">1</button>
+<button onclick="pushBtn(this);">2</button>
+<button onclick="pushBtn(this);">3</button>
+<button onclick="pushBtn(this);">0</button>
+<button onclick="pushBtn(this);">00</button>
+<button onclick="pushBtn(this);">.</button>
+<button onclick="pushBtn(this);" id="equal">=</button>
+</div>
+</div>
+
+<!--Menghitung bangun datar-->
+<h2 class="jenis-calculator">kalkulator bangun datar </h2>
+<p class="info">
+    Masih dalam pengerjaan!
+</p>
+<div class="kalkulatorBangunDatar">
+
+
+</div>
+
+<script>
+let inputLabel = document.getElementById('hasil');
+     
+    function pushBtn(obj) {
+         
+        let pushed = obj.innerHTML;
+         
+        if (pushed == '=') {
+            // Calculate
+            inputLabel.innerHTML = eval(inputLabel.innerHTML);
+             
+        } else if (pushed == 'C') {
+            // All Clear
+            inputLabel.innerHTML = '0';
+             
+        } else {
+            if (inputLabel.innerHTML == '0') {
+                inputLabel.innerHTML = pushed;
+                 
+            } else {
+                inputLabel.innerHTML += pushed;   
+            }
+        }
+    }
+    
+ 
+
+</script>
+
+  <footer>
+    <p class="copy">Copyright &#169; 2023 sandi Junaedi </p>
+  </footer>
+
+</body>
+</html>
+</body>
+
+</html>
